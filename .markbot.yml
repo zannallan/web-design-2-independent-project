@@ -1,0 +1,34 @@
+repo: "web-design-2-independent-project"
+canvasCourse: "web-design-2"
+
+allFiles:
+  html:
+    unique:
+      - "h1"
+    performance: true
+
+inherit:
+  - naming-restrict-live
+  - git-10
+  - html
+  - html-good-semantics
+  - css
+  - accessibility
+  - aria-landmarks
+  - nav-hover
+  - nav-focus
+  - main-link-focus
+  - favicons
+
+html:
+  - path: "index.html"
+
+css:
+  - path: "css/main.css"
+
+files:
+  - directory: "images"
+    smushed: true
+    maxHeight: 2500
+    maxWidth: 2500
+    maxSize: 250
