@@ -11,26 +11,26 @@
 <body>
 
   <header role="banner">
-    <nav role="navigation">
+    <nav role="navigation" id="nav">
       <div class="logo">
         <img src="images/wiener-logo.svg" alt="Logo for Zann's Weiner Rescue">
       </div>
       <ul>
-        <li><a href="#" aria-label="Scroll to about page">About</a></li>
-        <li><a href="#" aria-label="Scroll to meet the pups page">Meet the Pups</a></li>
-        <li><a href="#" aria-label="Scroll to contact page">Contact</a></li>
-        <li><button class="primary-button" type="button">Adopt Now!</button></li>
+        <li><a href="#about" aria-label="Scroll to about page">About</a></li>
+        <li><a href="meet-the-pups.html" aria-label="Scroll to meet the pups page">Meet the Pups</a></li>
+        <li><a href="#contact" aria-label="Scroll to contact page">Contact</a></li>
       </ul>
+      <button onclick='window.location.href="adopt-now.html"' class="primary-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
     </nav>
     <div class="banner">
       <img src="images/banner-1.jpg" alt="Black and tan weiner dog in a box">
       <h1>Save a Wiener Today!</h1>
       <h2>Every puppy deserves a forever home.</h2>
       <div>
-        <button class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
+        <button onclick='window.location.href="meet-the-pups.html"' class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
       </div>
       <div>
-        <button class="secondary-button" type="button" aria-label="Scroll to about section">Learn More</button>
+        <button onclick='window.location.href="#about"' class="secondary-button" type="button" aria-label="Scroll to about section">Learn More</button>
       </div>
     </div>
   </header>
@@ -41,7 +41,7 @@
       <p>We are an all Dachshund dog rescue located in Ottawa, Ontario. We have both purebred and mixed breed Dachshunds that are looking for forever homes! Our founder, Susanna Allan, had a vision, and that vision was to provide the best care, and rehabilitation for all wiener dogs who have either been abandoned or abused. She owned Dachshunds all her life and this was where her love of the breed came from. To Learn more about the Dachshund breed, please visit the link provided!</p>
       <img src="images/about.jpg" alt="Cute puppy looking up at the camera">
       <div>
-        <button class="primary-button" type="button" aria-label="Learn More about the Dachshund breed">More About Dachshunds</button>
+        <button onclick='window.location.href="https://dogtime.com/dog-breeds/dachshund#/slide/1"' class="primary-button" type="button" aria-label="Learn More about the Dachshund breed">More About Dachshunds</button>
       </div>
     </section>
 
@@ -78,7 +78,7 @@
         </li>
       </ul>
       <div>
-        <button class="primary-button" type="button">See More...</button>
+        <button onclick='window.location.href="meet-the-pups.html#meet-the-pups"' class="primary-button" type="button" aria-label="See more of our pups">See More...</button>
       </div>
     </section>
 
@@ -119,13 +119,13 @@
   <footer role="contentinfo">
     <nav>
       <ul>
-        <li><a href="#" aria-label="Scroll to about section">About</a></li>
-        <li><a href="#" aria-label="Scroll to meet the pups section">Meet the Pups</a></li>
-        <li><a href="#" aria-label="Scroll to contact section">Contact</a></li>
+        <li><a href="index.html#nav" aria-label="Jump to home page">Home</a></li>
+        <li><a href="meet-the-pups.html" aria-label="Jump to meet the pups page">Meet the Pups</a></li>
+        <li><a href="#contact" aria-label="Scroll to contact section">Contact</a></li>
       </ul>
     </nav>
     <div>
-      <button class="primary-button" type="button" aria-label="Go to adobt now page">Adopt a Puppy Now!</button>
+      <button onclick='window.location.href="adopt-now.html"' class="primary-button" type="button" aria-label="Go to adobt now page">Adopt a Puppy Now!</button>
     </div>
     <p><small>© Copyright 2020 | All rights reserved</small></p>
     <ul class="social-icons">
