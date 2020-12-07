@@ -40,10 +40,12 @@
 
   <main role="main">
     <section id="about" class="about">
-      <h2>About</h2>
-      <p>We are an all Dachshund dog rescue located in Ottawa, Ontario. We have both purebred and mixed breed Dachshunds that are looking for forever homes! Our founder, Susanna Allan, had a vision, and that vision was to provide the best care, and rehabilitation for all wiener dogs who have either been abandoned or abused. She owned Dachshunds all her life and this was where her love of the breed came from. To Learn more about the Dachshund breed, please visit the link provided!</p>
+      <div class="about-text">
+        <h2>About</h2>
+        <p>We are an all Dachshund dog rescue located in Ottawa, Ontario. We have both purebred and mixed breed Dachshunds that are looking for forever homes! Our founder, Susanna Allan, had a vision, and that vision was to provide the best care, and rehabilitation for all wiener dogs who have either been abandoned or abused. She owned Dachshunds all her life and this was where her love of the breed came from. To Learn more about the Dachshund breed, please visit the link provided!</p>
+      </div>
       <img src="images/about.jpg" alt="Cute puppy looking up at the camera">
-      <div>
+      <div class="button-left">
         <button onclick='window.location.href="https://dogtime.com/dog-breeds/dachshund#/slide/1"' class="primary-button" type="button" aria-label="Learn More about the Dachshund breed">More About Dachshunds</button>
       </div>
     </section>
@@ -52,35 +54,35 @@
       <h2>Meet Our Pups!</h2>
       <ul class="card-wrap">
         <li class="cards">
-          <a href="#" aria-label="hover revealing more text">
+          <a href="meet-the-pups.html" aria-label="hover revealing more text">
           <img src="images/Hansel.jpg" alt="Brown wiener dog in forest">
           <h3>Hansel Age: 2yr.</h3>
           <p>Hansel is an adorable purebred Dachshund. He loves playing with other dogs and getting pets and loving from people. He is great with children and would suit any home.</p>
           </a>
         </li>
         <li class="cards">
-          <a href="#" aria-label="hover revealing more text">
+          <a href="meet-the-pups.html" aria-label="hover revealing more text">
           <img src="images/Sally.jpg" alt="Longhaired, brown wiener dog with big glossy eyes">
           <h3>Sally Age: 1yr.</h3>
           <p>Sally is a cute purebred Dachshund who was rescued from an abandoned home. She is a little shy, but loves a good cuddle. She would suit a quiter household with few pets.</p>
           </a>
         </li>
         <li class="cards">
-          <a href="#" aria-label="hover revealing more text">
+          <a href="meet-the-pups.html" aria-label="hover revealing more text">
           <img src="images/Brownie.jpg" alt="Brown wiener dog close up headshot">
           <h3>Brownie Age: 5yrs.</h3>
           <p>Brownie is an older boy here at the rescue, he was saved from a hole near a park where he got stuck trying to chase a rabbit. His owners were not located and was later taken in by Zann's Wiener Rescue. He is a fun loving boy, a little bratty, but great with people. He like to bark so his forever home would be better outside of the city. </p>
           </a>
         </li>
         <li class="cards">
-          <a href="#" aria-label="hover revealing more text">
+          <a href="meet-the-pups.html" aria-label="hover revealing more text">
           <img src="images/Brandy.jpg" alt="Longhaired wiener pup laying on her side">
           <h3>Brandy Age: 6mo.</h3>
           <p>Brandy is an adorable 6 month old pup, who was given to us by a family who moved overseas. She has a super sweet personality and love to play and cuddle. She would be well suited for any family.</p>
           </a>
         </li>
       </ul>
-      <div>
+      <div class="button-left">
         <button onclick='window.location.href="meet-the-pups.html#meet-the-pups"' class="primary-button" type="button" aria-label="See more of our pups">See More...</button>
       </div>
     </section>
@@ -112,7 +114,7 @@
           <label for="details">Write Message Here</label>
           <textarea id="details" name="message" required></textarea>
         </div>
-        <div>
+        <div class="button-center">
           <button class="secondary-button" type="submit" aria-label="Send message to Zann's Weiner Rescue">Send Message</button>
         </div>
       </form>
@@ -120,22 +122,22 @@
   </main>
 
   <footer role="contentinfo" class="footer">
-    <nav>
+    <div class="button-center">
+      <button onclick='window.location.href="adopt-now.html"' class="footer-button" type="button" aria-label="Go to adobt now page">Adopt a Puppy Now!</button>
+    </div>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/" aria-label="Link to facebook website"><img src="images/fb-white.png" alt="White facebook icon"></a></li>
+      <li><a href="https://www.instagram.com/" aria-label="Link to instagram website"><img src="images/instagram-icon-white.png" alt="White instagram icon"></a></li>
+      <li><a href="https://twitter.com/?lang=en" aria-label="Link to twitter website"><img src="images/twitter-white.png" alt="White twitter icon"></a></li>
+    </ul>
+    <nav class="footer-nav">
       <ul>
         <li><a href="index.html#nav" aria-label="Jump to home page">Home</a></li>
         <li><a href="meet-the-pups.html" aria-label="Jump to meet the pups page">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact section">Contact</a></li>
       </ul>
     </nav>
-    <div>
-      <button onclick='window.location.href="adopt-now.html"' class="primary-button" type="button" aria-label="Go to adobt now page">Adopt a Puppy Now!</button>
-    </div>
     <p><small>© Copyright 2020 | All rights reserved</small></p>
-    <ul class="social-icons">
-      <li><a href="https://www.facebook.com/" aria-label="Link to facebook website"><img src="images/fb-white.png" alt="White facebook icon"></a></li>
-      <li><a href="https://www.instagram.com/" aria-label="Link to instagram website"><img src="images/instagram-icon-white.png" alt="White instagram icon"></a></li>
-      <li><a href="https://twitter.com/?lang=en" aria-label="Link to twitter website"><img src="images/twitter-white.png" alt="White twitter icon"></a></li>
-    </ul>
   </footer>
 
 </body>

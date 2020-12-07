@@ -37,8 +37,13 @@ img {
   text-align: center;
 }
 
+.button-left {
+  text-align: left;
+  padding-left: 1.4rem;
+}
+
 .nav-button {
-  padding: .75em 1em;
+  padding: .75rem 1rem;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
   font-size: 1.1em;
@@ -51,7 +56,7 @@ img {
 }
 
 .primary-button {
-  padding: .75em 1.5em;
+  padding: .75rem 1.5rem;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
   font-size: 1.1em;
@@ -60,12 +65,12 @@ img {
   box-shadow: -2px 5px #877d93;
   border: 0;
   border-radius: 50%;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   width: 160px;
 }
 
 .secondary-button {
-  padding: .75em 1.5em;
+  padding: .75rem 1.5rem;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
   font-size: 1.1em;
@@ -77,7 +82,7 @@ img {
   width: 160px;
 }
 
-nav {
+header nav {
   background-color: rgba(214,203,198,0.5);
   padding-bottom: 2rem;
   display: grid;
@@ -85,7 +90,7 @@ nav {
   grid-template-rows: auto 3rem;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,9 +111,9 @@ nav a {
 }
 
 .banner-text {
-  padding: 1em 1em;
+  padding: 1rem 1rem;
   background-color: rgba(214,203,198,0.5);
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .banner {
@@ -120,18 +125,189 @@ nav a {
   color: #312649;
   text-align: center;
   vertical-align: middle;
-  padding: 12em  1.4em;
-}
-
-section {
-
+  padding: 10rem 1.4rem;
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 .25rem 0;
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
-h2 {
+.banner h2 {
   margin: 0;
   font-weight: normal;
 }
+
+p {
+  margin: 0;
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+}
+
+.about-text {
+  background-color: #fff;
+  padding: 1.4rem;
+  margin: 2rem 0 .5rem;
+  color: #312649;
+}
+
+h2 {
+  margin-bottom: .5rem;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.about img {
+  position: absolute;
+  z-index: -1000;
+  transform: rotate(20deg);
+  overflow: hidden;
+  border: 5px dotted #312649;
+}
+
+.meet-the-pups {
+  padding: 1.4rem;
+}
+
+.meet-the-pups h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #312649;
+}
+
+.meet-the-pups .card-wrap {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meet-the-pups .cards {
+  padding: 2rem;
+  background-color: #d6cbc6;
+  border-radius: 50px;
+  box-shadow: -5px 5px #866256;
+  max-height: 25em;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: solid 2rem #d6cbc6;
+  margin-bottom: 2rem;
+}
+
+.meet-the-pups .cards:hover {
+  overflow: visible;
+  white-space: normal;
+  max-height: 100%;
+  border-bottom: 0;
+  transform: scale(1.1);
+  transition: transform .4s ease-in-out, max-height .4s ease-in-out;
+}
+
+.meet-the-pups .cards a {
+  text-decoration: none;
+  color: #312649;
+}
+
+.meet-the-pups .button-left {
+  padding: 0;
+}
+
+.meet-the-pups .cards h3, p {
+  margin: .5rem 0 0 0;
+  white-space: normal;
+}
+
+.contact {
+  padding: 1.4rem;
+}
+
+.contact h2, p{
+  color: #312649;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  background-color: #877d93;
+  padding: 2em;
+}
+
+.contact input, textarea, select {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+ .contact label {
+   display: block;
+   color: #fff;
+   font-size: 1.2em;
+   margin: .2em;
+ }
+
+ footer {
+   background-color: rgba(214,203,198,0.5);
+   padding: 1.4rem;
+ }
+
+ footer ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   font-size: 1rem;
+   margin: 0;
+   padding: 0;
+ }
+
+ .footer-nav ul {
+   justify-content: space-between;
+ }
+
+ footer p {
+   text-align: center;
+   margin-bottom: .5rem
+ }
+
+ .social-icons {
+   padding: 0;
+ }
+
+ .social-icons ul {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .social-icons li {
+   max-width: 2rem;
+   list-style-type: none;
+   margin: .75em;
+ }
+
+ footer li:first-child {
+   max-width: 2.5rem;
+ }
+
+ .footer-button {
+   padding: 1rem 1.2rem 1.2rem;
+   font-family: "Dosis", sans-serif;
+   font-weight: bold;
+   font-size: 1em;
+   background-color: #312649;
+   color: #fff;
+   box-shadow: -2px 5px #877d93;
+   border: 0;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   width: 120px;
+   line-height: 1;
+ }
