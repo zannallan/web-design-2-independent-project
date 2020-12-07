@@ -20,11 +20,15 @@
         <li><a href="meet-the-pups.html" aria-label="Scroll to meet the pups page">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact page">Contact</a></li>
       </ul>
-      <button onclick='window.location.href="adopt-now.html"' class="primary-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
+      <div class="button-center">
+        <button onclick='window.location.href="adopt-now.html"' class="nav-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
+      </div>
     </nav>
     <div class="banner">
-      <h1>Save a Wiener Today!</h1>
-      <h2>Every puppy deserves a forever home.</h2>
+      <div class="banner-text">
+        <h1>Save a Wiener Today!</h1>
+        <h2>Every puppy deserves a forever home.</h2>
+      </div>
       <div>
         <button onclick='window.location.href="meet-the-pups.html"' class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
       </div>
@@ -35,7 +39,7 @@
   </header>
 
   <main role="main">
-    <section id="about">
+    <section id="about" class="about">
       <h2>About</h2>
       <p>We are an all Dachshund dog rescue located in Ottawa, Ontario. We have both purebred and mixed breed Dachshunds that are looking for forever homes! Our founder, Susanna Allan, had a vision, and that vision was to provide the best care, and rehabilitation for all wiener dogs who have either been abandoned or abused. She owned Dachshunds all her life and this was where her love of the breed came from. To Learn more about the Dachshund breed, please visit the link provided!</p>
       <img src="images/about.jpg" alt="Cute puppy looking up at the camera">
@@ -44,7 +48,7 @@
       </div>
     </section>
 
-    <section id="meet-the-pups">
+    <section id="meet-the-pups" class="meet-the-pups">
       <h2>Meet Our Pups!</h2>
       <ul class="card-wrap">
         <li class="cards">
@@ -81,7 +85,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact Us!</h2>
       <p>Email: susanna@zannswienerrescue.com<br>
         Phone: (613)-433-2678<br>
@@ -115,7 +119,7 @@
     </section>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" class="footer">
     <nav>
       <ul>
         <li><a href="index.html#nav" aria-label="Jump to home page">Home</a></li>

@@ -11,7 +11,7 @@
 <body>
 
   <header role="banner">
-    <nav role="navigation">
+    <nav role="navigation" id="nav">
       <div class="logo">
         <img src="images/wiener-logo.svg" alt="Logo for Zann's Weiner Rescue">
       </div>
@@ -20,11 +20,15 @@
         <li><a href="meet-the-pups.html" aria-label="Jump to meet the pups section">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact section">Contact</a></li>
       </ul>
-      <button onclick='window.location.href="adopt-now.html"' class="primary-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
+      <div class="button-center">
+        <button onclick='window.location.href="adopt-now.html"' class="nav-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
+      </div>
     </nav>
     <div class="adopt-banner">
-      <h1>Ask Us a Question!</h1>
-      <h2>Why adopt instead of buying?</h2>
+      <div class="banner-text">
+        <h1>Ask Us a Question!</h1>
+        <h2>Why adopt instead of buying?</h2>
+      </div>
       <div>
         <button onclick='window.location.href="#contact"' class="primary-button" type="button" aria-label="Scroll to contact section">Contact Us!</button>
       </div>
