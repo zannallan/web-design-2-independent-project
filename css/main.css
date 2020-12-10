@@ -409,13 +409,12 @@ header ul {
   }
 
   .tablet-left {
-    text-align: left;
-    text-align: left;
-    width: 25%;
+    text-align: right;
+    width: 20%;
   }
 
   .tablet-left:first-child {
-    text-align: center;
+    text-align: right;
   }
 
   .button {
