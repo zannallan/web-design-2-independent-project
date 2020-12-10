@@ -130,8 +130,9 @@ nav a {
 
 h1 {
   margin: 0 0 .25rem 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.1;
+  font-family: "Shadows Into Light", sans-serif;
 }
 
 .banner h2 {
@@ -154,6 +155,7 @@ p {
   padding: 1.4rem;
   margin: 2rem 0 .5rem;
   color: #312649;
+  max-width: 500px;
 }
 
 h2 {
@@ -184,6 +186,7 @@ h2 {
 .meet-the-pups .card-wrap {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 .meet-the-pups .cards {
@@ -196,6 +199,13 @@ h2 {
   white-space: nowrap;
   border-bottom: solid 2rem #d6cbc6;
   margin-bottom: 2rem;
+  max-width: 300px;
+  display: inline-block;
+  text-align: left;
+}
+
+.meet-the-pups .cards:last-child {
+  display: none;
 }
 
 .meet-the-pups .cards:hover {
@@ -204,7 +214,7 @@ h2 {
   max-height: 100%;
   border-bottom: 0;
   transform: scale(1.1);
-  transition: transform .4s ease-in-out, max-height .4s ease-in-out;
+  transition: transform .2s ease-in-out, max-height .2s ease-in-out;
 }
 
 .meet-the-pups .cards a {
@@ -311,3 +321,144 @@ h2 {
    width: 120px;
    line-height: 1;
  }
+
+@media only screen and (min-width: 38em) {
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr .1fr;
+  grid-template-rows: auto 0rem;
+  padding: 1rem;
+  justify-items: right;
+}
+
+.logo {
+  width: 100%;
+}
+
+header ul {
+  margin-left: 2rem;
+}
+
+.button {
+  padding-top: 2rem;
+}
+
+.meet-the-pups .card-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.4rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.meet-the-pups .cards {
+  margin-bottom: 0;
+}
+
+.meet-the-pups .cards:last-child {
+  display: inherit;
+}
+
+.tablet-left {
+  text-align: left;
+  padding-left: 3.5rem;
+}
+
+.banner-text {
+  width: 50%;
+}
+
+.footer-nav ul {
+  justify-content: center;
+}
+
+.footer-nav li {
+  margin: .5rem;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header nav {
+    display: grid;
+    grid-template-columns: .5fr 2fr .3fr;
+    grid-template-rows: auto 0rem;
+    justify-content: right;
+    padding: 1rem;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    justify-items: center;
+  }
+
+  form {
+    width: 600px;
+  }
+
+  .banner-text {
+    background-color: rgba(214,203,198,0);
+  }
+
+  .desktop-buttons {
+    display: flex;
+  }
+
+  .tablet-left {
+    text-align: left;
+    text-align: left;
+    width: 25%;
+  }
+
+  .tablet-left:first-child {
+    text-align: center;
+  }
+
+  .button {
+    padding-top: 2.5rem;
+  }
+
+  .meet-the-pups {
+    padding: 3rem;
+  }
+
+  .meet-the-pups h2 {
+    padding-left: 1rem;
+  }
+
+  .meet-the-pups .card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-gap: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .meet-the-pups .cards:last-child {
+    display: inherit;
+  }
+
+  .about img {
+    width: 50%;
+    transform: rotate(20deg) translate(20rem, -30rem);
+  }
+
+  .about-text {
+    margin-left: 10rem;
+    margin-top: 10rem;
+  }
+
+  .button-left {
+    padding-left: 11.5rem;
+  }
+
+  .contact {
+    padding: 3rem;
+  }
+
+}

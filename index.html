@@ -20,7 +20,7 @@
         <li><a href="meet-the-pups.html" aria-label="Scroll to meet the pups page">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact page">Contact</a></li>
       </ul>
-      <div class="button-center">
+      <div class="button-center button">
         <button onclick='window.location.href="adopt-now.html"' class="nav-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
       </div>
     </nav>
@@ -29,11 +29,13 @@
         <h1>Save a Wiener Today!</h1>
         <h2>Every puppy deserves a forever home.</h2>
       </div>
-      <div>
-        <button onclick='window.location.href="meet-the-pups.html"' class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
-      </div>
-      <div>
-        <button onclick='window.location.href="#about"' class="secondary-button" type="button" aria-label="Scroll to about section">Learn More</button>
+      <div class="desktop-buttons">
+        <div class="tablet-left">
+          <button onclick='window.location.href="meet-the-pups.html"' class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
+        </div>
+        <div class="tablet-left">
+          <button onclick='window.location.href="#about"' class="secondary-button" type="button" aria-label="Scroll to about section">Learn More</button>
+        </div>
       </div>
     </div>
   </header>
@@ -82,17 +84,19 @@
           </a>
         </li>
       </ul>
-      <div class="button-left">
+      <div class="button-center">
         <button onclick='window.location.href="meet-the-pups.html#meet-the-pups"' class="primary-button" type="button" aria-label="See more of our pups">See More...</button>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contact Us!</h2>
-      <p>Email: susanna@zannswienerrescue.com<br>
-        Phone: (613)-433-2678<br>
-        or<br>
-        Fill out this form for any questions regarding our little hot dogs!</p>
+      <div class="contact-info">
+        <h2>Contact Us!</h2>
+        <p>Email: susanna@zannswienerrescue.com<br>
+          Phone: (613)-433-2678<br>
+          or<br>
+          Fill out this form for any questions regarding our little hot dogs!</p>
+      </div>
       <form method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
         <div class="name-info">
           <label for="name">Name</label>
