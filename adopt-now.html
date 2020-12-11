@@ -20,7 +20,7 @@
         <li><a href="meet-the-pups.html" aria-label="Jump to meet the pups section">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact section">Contact</a></li>
       </ul>
-      <div class="button-center">
+      <div class="button-center button">
         <button onclick='window.location.href="adopt-now.html"' class="nav-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
       </div>
     </nav>
@@ -29,29 +29,35 @@
         <h1>Ask Us a Question!</h1>
         <h2>Why adopt instead of buying?</h2>
       </div>
-      <div>
-        <button onclick='window.location.href="#contact"' class="primary-button" type="button" aria-label="Scroll to contact section">Contact Us!</button>
-      </div>
-      <div>
-        <button onclick='window.location.href="https://www.petcarehospital.net/blog/adopting-instead-of-buying-a-pet"' class="secondary-button" type="button" aria-label="Click to see why you should adopt instead of buying">Click here Answer</button>
+      <div class="desktop-buttons">
+        <div class="button-center tablet-left">
+          <button onclick='window.location.href="#contact"' class="primary-button" type="button" aria-label="Scroll to contact section">Contact Us!</button>
+        </div>
+        <div class="button-center tablet-left">
+          <button onclick='window.location.href="https://www.petcarehospital.net/blog/adopting-instead-of-buying-a-pet"' class="secondary-button" type="button" aria-label="Click to see why you should adopt instead of buying">Click here for Answer</button>
+        </div>
       </div>
     </div>
   </header>
 
   <main role="main">
-    <section id="adoption-process">
-      <h2>Adoption Process</h2>
-      <p>We are here to provide the best homes and best matches for our adorable wiener dogs. We do not allow adoption to anybody to any dog, they need to suit eachothers lifestyles. Therefore, we do not approve of first come, first serve adopting.</p>
-      <p>The adoption process starts with an email or phone call. Contact us with any questions about us and the pup you're interested in adopting. Once you receive a confirmation that the pup you want is still available, you will also receive a questionnaire to fill out to test your compatibility with the pup.</p>
-      <p>Next, you will be asked to come for an in person visit with the pup to see how you interect and if you are still interested after the visit. If you are a good match after the visit, you can go forward with the adoption and sign the papers.</p>
-      <p><small>*Note, no puppy can be adopted until they are at least 8 weeks old.</small></p>
+    <section id="adoption-process" class="adoption-process">
+      <div class="adoption-text">
+        <h2>Adoption Process</h2>
+        <p>We are here to provide the best homes and best matches for our adorable wiener dogs. We do not allow adoption to anybody to any dog, they need to suit eachothers lifestyles. Therefore, we do not approve of first come, first serve adopting.</p>
+        <p>The adoption process starts with an email or phone call. Contact us with any questions about us and the pup you're interested in adopting. Once you receive a confirmation that the pup you want is still available, you will also receive a questionnaire to fill out to test your compatibility with the pup.</p>
+        <p>Next, you will be asked to come for an in person visit with the pup to see how you interect and if you are still interested after the visit. If you are a good match after the visit, you can go forward with the adoption and sign the papers.</p>
+        <p><small>*Note, no puppy can be adopted until they are at least 8 weeks old.</small></p>
+      </div>
       <img src="images/adoption.jpg" alt="Girl kissing puppy in field">
     </section>
 
-    <section id="adoption-fees">
-      <h2>Adoption Fees</h2>
-      <p>Here at Zann's Wiener Rescue all adopted dogs/puppies come with their vaccinations and vet checks covered and any spay/neutering taken care of as well. The fees provided are based on the overall fees each of these age groups take, puppies need more vet care, and overall care/training than older dogs therefore they are the highest cost. We provide some deals if multiple dogs are adopted, however. We also give discounts for some dogs with behavioural concerns, or any that need for professional training.</p>
-      <ul>
+    <section id="adoption-fees" class="adoption-fees">
+      <div class="adoption-text">
+        <h2>Adoption Fees</h2>
+        <p>Here at Zann's Wiener Rescue all adopted dogs/puppies come with their vaccinations and vet checks covered and any spay/neutering taken care of as well. The fees provided are based on the overall fees each of these age groups take, puppies need more vet care, and overall care/training than older dogs therefore they are the highest cost. We provide some deals if multiple dogs are adopted, however. We also give discounts for some dogs with behavioural concerns, or any that need for professional training.</p>
+      </div>
+      <ul class="fees-list">
         <li><strong>Puppies up to one year ~ $550.00</strong></li>
         <li><strong>Over one year to four years ~ $450.00</strong></li>
         <li><strong>Over four years to six years ~ $400.00</strong></li>

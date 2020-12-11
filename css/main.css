@@ -115,10 +115,11 @@ nav a {
 }
 
 .banner-text {
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: rgba(255,255,255,0.7);
   margin-bottom: 1rem;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .banner {
@@ -179,6 +180,124 @@ h2 {
   border: 5px dotted #312649;
 }
 
+.contact {
+  padding: 1.4rem;
+  background-image: url(../images/bone-bg.jpg);
+  background-size: cover;
+}
+
+.contact h2, p{
+  color: #312649;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  background-color: rgba(255,255,255,0.75);
+  max-height: 15rem;
+}
+
+.contact form {
+  background-color: #877d93;
+  padding: 2em;
+}
+
+.contact input, textarea, select {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+.contact label {
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  margin: .2em;
+}
+
+footer {
+  background-color: rgba(214,203,198,0.5);
+  padding: 1.4rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul {
+  justify-content: space-between;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: .5rem
+}
+
+.social-icons {
+  padding: 0;
+}
+
+.social-icons ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons li {
+  max-width: 2rem;
+  list-style-type: none;
+  margin: .75em;
+}
+
+footer li:first-child {
+  max-width: 2.5rem;
+}
+
+.footer-button {
+  padding: 1rem 1.2rem 1.2rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: #312649;
+  color: #fff;
+  box-shadow: -2px 5px #877d93;
+  border: 0;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 120px;
+  line-height: 1;
+}
+
+.cards button {
+  margin-top: 1rem;
+}
+
+/* Meet the Pups Styles*/
+
+.pups-banner {
+  background-image: url(../images/banner-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+  color: #312649;
+  text-align: left;
+  vertical-align: middle;
+  padding: 10rem 1.4rem;
+  margin-top: 6rem;
+}
+
 .meet-the-pups {
   padding: 1.4rem;
 }
@@ -237,200 +356,147 @@ h2 {
   white-space: normal;
 }
 
-.contact {
-  padding: 1.4rem;
-  background-image: url(../images/bone-bg.jpg);
-  background-size: cover;
-}
-
-.contact h2, p{
-  color: #312649;
-}
-
-.contact p {
+.pups-text {
   margin-bottom: 2rem;
-}
-
-.contact-info {
-  padding: 2rem;
-  background-color: rgba(255,255,255,0.75);
-  max-height: 15rem;
-}
-
-.contact form {
-  background-color: #877d93;
-  padding: 2em;
-}
-
-.contact input, textarea, select {
-  width: 100%;
-  margin-bottom: 1em;
-  padding: .5em;
-}
-
- .contact label {
-   display: block;
-   color: #fff;
-   font-size: 1.2em;
-   margin: .2em;
- }
-
- footer {
-   background-color: rgba(214,203,198,0.5);
-   padding: 1.4rem;
- }
-
- footer ul {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   list-style-type: none;
-   font-size: 1rem;
-   margin: 0;
-   padding: 0;
- }
-
- .footer-nav ul {
-   justify-content: space-between;
- }
-
- footer p {
-   text-align: center;
-   margin-bottom: .5rem
- }
-
- .social-icons {
-   padding: 0;
- }
-
- .social-icons ul {
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
- }
-
- .social-icons li {
-   max-width: 2rem;
-   list-style-type: none;
-   margin: .75em;
- }
-
- footer li:first-child {
-   max-width: 2.5rem;
- }
-
- .footer-button {
-   padding: 1rem 1.2rem 1.2rem;
-   font-family: "Dosis", sans-serif;
-   font-weight: bold;
-   font-size: 1em;
-   background-color: #312649;
-   color: #fff;
-   box-shadow: -2px 5px #877d93;
-   border: 0;
-   border-radius: 50%;
-   margin-bottom: 1rem;
-   width: 120px;
-   line-height: 1;
- }
-
- .pups-banner {
-   background-image: url(../images/banner-2.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   min-height: 700px;
-   color: #312649;
-   text-align: left;
-   vertical-align: middle;
-   padding: 10rem 1.4rem;
-   margin-top: 6rem;
- }
-
- .pups-text {
-   margin-bottom: 2rem;
- }
-
- .pups-buttons {
-   margin-bottom: 2rem;
- }
-
- .cards button {
-   margin-top: 1rem;
- }
-
-@media only screen and (min-width: 38em) {
-
-header nav {
-  display: grid;
-  grid-template-columns: 1fr 2fr .1fr;
-  grid-template-rows: auto 0rem;
-  padding: 1rem;
-  justify-items: right;
-}
-
-.logo {
-  width: 100%;
-}
-
-header ul {
-  margin-left: 2rem;
-}
-
-.button {
-  padding-top: 2rem;
-}
-
-.meet-the-pups .card-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.4rem;
-  justify-items: center;
-  margin-bottom: 2rem;
-}
-
-.meet-the-pups .cards {
-  margin-bottom: 0;
-}
-
-.meet-the-pups .cards:last-child {
-  display: inherit;
-}
-
-.tablet-left {
-  text-align: left;
-  padding-left: 3.5rem;
-}
-
-.banner-text {
-  width: 50%;
-}
-
-.pups-banner .banner-text {
-  width: 60%;
-  float: right;
-}
-
-.pups-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
 }
 
 .pups-buttons {
-  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.footer-nav ul {
-  justify-content: center;
+/* Adopt Now Styles*/
+
+.adopt-banner {
+  background-image: url(../images/banner-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+  color: #312649;
+  text-align: left;
+  vertical-align: middle;
+  padding: 10rem 1.4rem;
+  margin-top: 6rem;
 }
 
-.footer-nav li {
-  margin: .5rem;
+.adopt-banner h2 {
+  margin: 0;
+  font-weight: normal;
 }
+
+.adoption-process {
+  position: relative;
+  overflow: hidden;
+  min-height: 900px;
+}
+
+.adoption-text {
+  background-color: #fff;
+  padding: 1.4rem;
+  margin: 2rem 0 .5rem;
+  color: #312649;
+  max-width: 500px;
+}
+
+.adoption-text p {
+  margin-bottom: 1.5rem;
+}
+
+.adoption-process img {
+  position: absolute;
+  z-index: -1000;
+  transform: rotate(20deg) translateY(-2rem);
+  overflow: hidden;
+  border: 5px dotted #312649;
+}
+
+.fees-list {
+  margin: 0 0 2rem 0;
+  padding: 0 1.4rem 1.4rem 3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr .1fr;
+    grid-template-rows: auto 0rem;
+    padding: 1rem;
+    justify-items: right;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  header ul {
+    margin-left: 2rem;
+  }
+
+  .button {
+    padding-top: 2rem;
+  }
+
+  .tablet-left {
+    text-align: center;
+    width: 50%;
+  }
+
+  .banner-text {
+    width: 50%;
+  }
+
+  .footer-nav ul {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    margin: .5rem;
+  }
+
+  /* Meet the Pups Styles*/
+
+  .pups-banner .banner-text {
+    width: 60%;
+    float: right;
+  }
+
+  .meet-the-pups .card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.4rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .meet-the-pups .cards {
+    margin-bottom: 0;
+  }
+
+  .meet-the-pups .cards:last-child {
+    display: inherit;
+  }
+
+  .pups-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .pups-buttons {
+    padding-top: 2rem;
+  }
+
+  /* Adopt Now Styles*/
+
+  .adoption-process img {
+    transform: rotate(20deg) translateY(-6rem);
+  }
+
+  .fees-list {
+    font-size: 1.25rem;
+  }
 
 }
 
@@ -451,32 +517,11 @@ header ul {
   }
 
   form {
-    width: 600px;
+    min-width: 430px;
   }
 
   .banner {
     min-height: 42rem;
-  }
-
-  .pups-banner .banner-text {
-    background-color: rgba(214,203,198,0);
-    float: right;
-    width: 40%;
-  }
-
-  .pups-info {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: left;
-    margin-bottom: 4rem;
-  }
-
-  .meet-the-pups .pups-text h2 {
-    padding: 0;
-  }
-
-  .pups-text {
-    padding: 1rem;
   }
 
   .banner-text {
@@ -500,6 +545,26 @@ header ul {
     padding-top: 2.5rem;
   }
 
+  .about img {
+    width: 50%;
+    transform: rotate(20deg) translate(20rem, -30rem);
+  }
+
+  .about-text {
+    margin-left: 10rem;
+    margin-top: 10rem;
+  }
+
+  .button-left {
+    padding-left: 11.5rem;
+  }
+
+  .contact {
+    padding: 3rem 8rem;
+  }
+
+  /* Meet the Pups Styles*/
+
   .meet-the-pups {
     padding: 3rem;
     min-height: 48rem;
@@ -522,22 +587,63 @@ header ul {
     display: inherit;
   }
 
-  .about img {
-    width: 50%;
-    transform: rotate(20deg) translate(20rem, -30rem);
+  .pups-banner .banner-text {
+    background-color: rgba(214,203,198,0);
+    float: right;
+    width: 40%;
   }
 
-  .about-text {
+  .pups-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: left;
+    margin-bottom: 4rem;
+  }
+
+  .meet-the-pups .pups-text h2 {
+    padding: 0;
+  }
+
+  .pups-text {
+    padding: 1rem;
+  }
+
+  /* Adopt Now Styles*/
+
+  .adopt-banner .banner-text {
+    padding: 2rem 1rem;
+    background-color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .adoption-process img {
+    width: 50%;
+    transform: rotate(20deg) translate(25rem, -45rem);
+  }
+
+  .adoption-text {
     margin-left: 10rem;
     margin-top: 10rem;
   }
 
-  .button-left {
-    padding-left: 11.5rem;
+  .adoption-fees .adoption-text {
+    margin-left: 0;
+    margin-top: 0;
   }
 
-  .contact {
-    padding: 3rem;
+  .fees-list {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .adoption-fees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: center;
+    padding: 5rem 10rem;
   }
 
 }
