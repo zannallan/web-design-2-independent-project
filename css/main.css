@@ -77,17 +77,21 @@ img {
   background-color: #fff;
   color: #312649;
   box-shadow: -2px 5px #312649;
-  border: 0;
+  border: .1px solid #312649;
   border-radius: 50%;
   width: 160px;
 }
 
 header nav {
-  background-color: rgba(214,203,198,0.5);
+  background-color: #efeae8;
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header nav ul {
@@ -111,21 +115,23 @@ nav a {
 }
 
 .banner-text {
-  padding: 1rem 1rem;
-  background-color: rgba(214,203,198,0.5);
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.7);
   margin-bottom: 1rem;
+  margin-top: 5rem;
 }
 
 .banner {
   background-image: url(../images/banner-1.jpg);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 550px;
+  min-height: 700px;
   color: #312649;
   text-align: center;
   vertical-align: middle;
   padding: 10rem 1.4rem;
+  margin-top: 8rem;
 }
 
 h1 {
@@ -233,6 +239,8 @@ h2 {
 
 .contact {
   padding: 1.4rem;
+  background-image: url(../images/bone-bg.jpg);
+  background-size: cover;
 }
 
 .contact h2, p{
@@ -241,6 +249,12 @@ h2 {
 
 .contact p {
   margin-bottom: 2rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  background-color: rgba(255,255,255,0.75);
+  max-height: 15rem;
 }
 
 .contact form {
@@ -322,6 +336,31 @@ h2 {
    line-height: 1;
  }
 
+ .pups-banner {
+   background-image: url(../images/banner-2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   min-height: 700px;
+   color: #312649;
+   text-align: left;
+   vertical-align: middle;
+   padding: 10rem 1.4rem;
+   margin-top: 6rem;
+ }
+
+ .pups-text {
+   margin-bottom: 2rem;
+ }
+
+ .pups-buttons {
+   margin-bottom: 2rem;
+ }
+
+ .cards button {
+   margin-top: 1rem;
+ }
+
 @media only screen and (min-width: 38em) {
 
 header nav {
@@ -370,6 +409,21 @@ header ul {
   width: 50%;
 }
 
+.pups-banner .banner-text {
+  width: 60%;
+  float: right;
+}
+
+.pups-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.pups-buttons {
+  padding-top: 2rem;
+}
+
 .footer-nav ul {
   justify-content: center;
 }
@@ -387,7 +441,7 @@ header ul {
     grid-template-columns: .5fr 2fr .3fr;
     grid-template-rows: auto 0rem;
     justify-content: right;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
   }
 
   .contact {
@@ -398,6 +452,31 @@ header ul {
 
   form {
     width: 600px;
+  }
+
+  .banner {
+    min-height: 42rem;
+  }
+
+  .pups-banner .banner-text {
+    background-color: rgba(214,203,198,0);
+    float: right;
+    width: 40%;
+  }
+
+  .pups-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: left;
+    margin-bottom: 4rem;
+  }
+
+  .meet-the-pups .pups-text h2 {
+    padding: 0;
+  }
+
+  .pups-text {
+    padding: 1rem;
   }
 
   .banner-text {
@@ -423,10 +502,11 @@ header ul {
 
   .meet-the-pups {
     padding: 3rem;
+    min-height: 48rem;
   }
 
   .meet-the-pups h2 {
-    padding-left: 1rem;
+    padding-left: 2.5rem;
   }
 
   .meet-the-pups .card-wrap {
