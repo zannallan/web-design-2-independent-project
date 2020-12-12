@@ -30,12 +30,17 @@ body {
 img {
   display: block;
   width: 100%;
+  background-color: #877d93;
 }
 
 .logo {
   width: 50%;
   margin: 1rem auto;
   max-width: 200px;
+}
+
+.logo img {
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .button-center {
@@ -288,6 +293,11 @@ footer p {
 
 .social-icons {
   padding: 0;
+}
+
+.social-icons img {
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .social-icons ul {
