@@ -22,6 +22,11 @@ body {
   margin: 0;
 }
 
+.skip-links {
+  display: none;
+  z-index: 1001;
+}
+
 img {
   display: block;
   width: 100%;
@@ -35,6 +40,19 @@ img {
 
 .button-center {
   text-align: center;
+}
+
+.button {
+  margin: 3rem 0;
+}
+
+.button-nav {
+  margin: 1.5rem 0;
+}
+
+.button-pups {
+  margin: 1.5rem 0;
+  color: #fff;
 }
 
 .button-left {
@@ -56,10 +74,11 @@ img {
 }
 
 .primary-button {
-  padding: .75rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-family: Dosis, sans-serif;
   font-weight: bold;
   font-size: 1.1em;
+  text-decoration: none;
   background-color: #312649;
   color: #fff;
   box-shadow: -2px 5px #877d93;
@@ -72,6 +91,7 @@ img {
 .secondary-button {
   padding: .75rem 1.5rem;
   font-family: Dosis, sans-serif;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
   background-color: #fff;
@@ -80,6 +100,23 @@ img {
   border: .1px solid #312649;
   border-radius: 50%;
   width: 160px;
+}
+
+.nav-button:hover {
+  background-color: #877d93;
+}
+
+.primary-button:hover {
+  background-color: #877d93;
+}
+
+.secondary-button:hover {
+  background-color: #312649;
+  color: #fff;
+}
+
+.footer-button:hover {
+  background-color: #877d93;
 }
 
 header nav {
@@ -108,22 +145,27 @@ nav a {
   text-decoration: none;
   border: 0;
   border-radius: 6px;
-  color: #877d93;
+  color: #312649;
   padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
 
+nav ul a:hover {
+  color: #fff;
+  background-color: #312649;
+}
+
 .banner-text {
   padding: 2rem 1rem;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, .7);
   margin-bottom: 1rem;
   margin-top: 5rem;
   text-align: center;
 }
 
 .banner {
-  background-image: url(../images/banner-1.jpg);
+  background-image: url("../images/banner-1.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top center;
@@ -136,7 +178,7 @@ nav a {
 }
 
 h1 {
-  margin: 0 0 .25rem 0;
+  margin: 0 0 .25rem;
   font-size: 3.5rem;
   line-height: 1.1;
   font-family: "Shadows Into Light", sans-serif;
@@ -160,7 +202,7 @@ p {
 .about-text {
   background-color: #fff;
   padding: 1.4rem;
-  margin: 2rem 0 .5rem;
+  margin: 2rem 0 2rem .5rem;
   color: #312649;
   max-width: 500px;
 }
@@ -182,11 +224,11 @@ h2 {
 
 .contact {
   padding: 1.4rem;
-  background-image: url(../images/bone-bg.jpg);
+  background-image: url("../images/bone-bg.jpg");
   background-size: cover;
 }
 
-.contact h2, p{
+.contact h2, p {
   color: #312649;
 }
 
@@ -196,13 +238,14 @@ h2 {
 
 .contact-info {
   padding: 2rem;
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255, 255, 255, .75);
   max-height: 15rem;
 }
 
 .contact form {
   background-color: #877d93;
   padding: 2em;
+  max-height: 453px;
 }
 
 .contact input, textarea, select {
@@ -214,12 +257,13 @@ h2 {
 .contact label {
   display: block;
   color: #fff;
+  background-color: #312649;
   font-size: 1.2em;
-  margin: .2em;
+  padding: .3em;
 }
 
 footer {
-  background-color: rgba(214,203,198,0.5);
+  background-color: rgba(214, 203, 198, .5);
   padding: 1.4rem;
 }
 
@@ -239,7 +283,7 @@ footer ul {
 
 footer p {
   text-align: center;
-  margin-bottom: .5rem
+  margin-bottom: .5rem;
 }
 
 .social-icons {
@@ -258,35 +302,36 @@ footer p {
   max-width: 2rem;
   list-style-type: none;
   margin: .75em;
+  margin-top: 2.5rem;
 }
 
 footer li:first-child {
   max-width: 2.5rem;
 }
 
+.footer-top-margin {
+  margin-top: 1.4rem;
+}
+
 .footer-button {
-  padding: 1rem 1.2rem 1.2rem;
-  font-family: "Dosis", sans-serif;
+  padding: 1rem 1.2rem;
+  font-family: Dosis, sans-serif;
   font-weight: bold;
+  text-decoration: none;
   font-size: 1em;
   background-color: #312649;
   color: #fff;
   box-shadow: -2px 5px #877d93;
   border: 0;
   border-radius: 50%;
-  margin-bottom: 1rem;
   width: 120px;
   line-height: 1;
-}
-
-.cards button {
-  margin-top: 1rem;
 }
 
 /* Meet the Pups Styles */
 
 .pups-banner {
-  background-image: url(../images/banner-2.jpg);
+  background-image: url("../images/banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -299,7 +344,8 @@ footer li:first-child {
 }
 
 .meet-the-pups {
-  padding: 1.4rem;
+  padding: 1.4rem 1.4rem 0;
+  margin-bottom: 3rem;
 }
 
 .meet-the-pups h2 {
@@ -329,6 +375,21 @@ footer li:first-child {
   text-align: left;
 }
 
+.meet-the-pups .last {
+  padding: 2rem;
+  background-color: #d6cbc6;
+  border-radius: 50px;
+  box-shadow: -5px 5px #866256;
+  max-height: 25em;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: solid 2rem #d6cbc6;
+  margin-bottom: 2rem;
+  max-width: 300px;
+  display: none;
+  text-align: left;
+}
+
 .meet-the-pups .cards:last-child {
   display: none;
 }
@@ -342,9 +403,28 @@ footer li:first-child {
   transition: transform .2s ease-in-out, max-height .2s ease-in-out;
 }
 
+.meet-the-pups .last:hover {
+  overflow: visible;
+  white-space: normal;
+  max-height: 100%;
+  border-bottom: 0;
+  transform: scale(1.1);
+  transition: transform .2s ease-in-out, max-height .2s ease-in-out;
+}
+
 .meet-the-pups .cards a {
   text-decoration: none;
   color: #312649;
+}
+
+.meet-the-pups .cards div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.meet-the-pups .last a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .meet-the-pups .button-left {
@@ -352,8 +432,14 @@ footer li:first-child {
 }
 
 .meet-the-pups .cards h3, p {
-  margin: .5rem 0 0 0;
+  margin: .5rem 0 0;
   white-space: normal;
+}
+
+.meet-the-pups .last h3, p {
+  margin: .5rem 0 0;
+  white-space: normal;
+  color: #312649;
 }
 
 .pups-text {
@@ -367,7 +453,7 @@ footer li:first-child {
 /* Adopt Now Styles */
 
 .adopt-banner {
-  background-image: url(../images/banner-3.jpg);
+  background-image: url("../images/banner-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -411,18 +497,20 @@ footer li:first-child {
 }
 
 .fees-list {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   padding: 0 1.4rem 1.4rem 3rem;
+  color: #312649;
 }
 
 @media only screen and (min-width: 38em) {
 
   header nav {
     display: grid;
-    grid-template-columns: 1fr 2fr .1fr;
-    grid-template-rows: auto 0rem;
+    grid-template-columns: 1fr 2fr .75fr;
+    grid-template-rows: auto 0;
     padding: 1rem;
     justify-items: right;
+    align-items: center;
   }
 
   .logo {
@@ -431,10 +519,6 @@ footer li:first-child {
 
   header ul {
     margin-left: 2rem;
-  }
-
-  .button {
-    padding-top: 2rem;
   }
 
   .tablet-left {
@@ -474,6 +558,10 @@ footer li:first-child {
     margin-bottom: 0;
   }
 
+  .meet-the-pups .last {
+    display: inherit;
+  }
+
   .meet-the-pups .cards:last-child {
     display: inherit;
   }
@@ -485,7 +573,8 @@ footer li:first-child {
   }
 
   .pups-buttons {
-    padding-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
   }
 
   /* Adopt Now Styles */
@@ -503,17 +592,29 @@ footer li:first-child {
 @media only screen and (min-width: 60em) {
 
   header nav {
-    display: grid;
-    grid-template-columns: .5fr 2fr .3fr;
-    grid-template-rows: auto 0rem;
-    justify-content: right;
+    display: flex;
     padding: 1rem 3rem 1rem 1rem;
+  }
+
+  .nav-button {
+    margin-left: 1.5rem;
+  }
+
+  .button-pups {
+    margin: 1.5rem 0;
+    color: #fff;
+  }
+
+  .logo {
+    width: 50%;
+    margin-left: 2rem;
   }
 
   .contact {
     display: grid;
     grid-template-columns: 1fr 1.25fr;
     justify-items: center;
+    padding: 3rem 8rem;
   }
 
   form {
@@ -525,7 +626,7 @@ footer li:first-child {
   }
 
   .banner-text {
-    background-color: rgba(214,203,198,0);
+    background-color: rgba(214, 203, 198, 0);
   }
 
   .desktop-buttons {
@@ -539,10 +640,6 @@ footer li:first-child {
 
   .tablet-left:first-child {
     text-align: right;
-  }
-
-  .button {
-    padding-top: 2.5rem;
   }
 
   .about img {
@@ -559,14 +656,11 @@ footer li:first-child {
     padding-left: 11.5rem;
   }
 
-  .contact {
-    padding: 3rem 8rem;
-  }
-
   /* Meet the Pups Styles */
 
   .meet-the-pups {
     padding: 3rem;
+    margin-bottom: 0;
     min-height: 48rem;
   }
 
@@ -576,19 +670,23 @@ footer li:first-child {
 
   .meet-the-pups .card-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
     grid-gap: 1.4rem;
     margin-bottom: 2rem;
   }
 
-  .meet-the-pups .cards:last-child {
-    display: inherit;
+  .meet-the-pups .cards {
+    min-width: 280px;
+  }
+
+  .meet-the-pups .last {
+    display: none;
   }
 
   .pups-banner .banner-text {
-    background-color: rgba(214,203,198,0);
+    background-color: rgba(214, 203, 198, 0);
     float: right;
     width: 40%;
   }
@@ -612,7 +710,7 @@ footer li:first-child {
 
   .adopt-banner .banner-text {
     padding: 2rem 1rem;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, .7);
     margin-bottom: 1rem;
     margin-top: 5rem;
     text-align: center;
@@ -644,6 +742,23 @@ footer li:first-child {
     justify-items: flex-start;
     align-items: center;
     padding: 5rem 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 88em) {
+
+  .meet-the-pups .card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-gap: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .meet-the-pups .last:last-child {
+    display: inherit;
   }
 
 }

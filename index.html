@@ -7,8 +7,15 @@
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="icon" type="image/png" href="/favicon-196.png">
 </head>
 <body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
 
   <header role="banner">
     <nav role="navigation" id="nav">
@@ -20,8 +27,8 @@
         <li><a href="meet-the-pups.html" aria-label="Scroll to meet the pups page">Meet the Pups</a></li>
         <li><a href="#contact" aria-label="Scroll to contact page">Contact</a></li>
       </ul>
-      <div class="button-center button">
-        <button onclick='window.location.href="adopt-now.html"' class="nav-button" type="button" aria-label="Jump to adopt now page">Adopt Now!</button>
+      <div class="button-center button-nav">
+        <a href="adopt-now.html" class="nav-button" aria-label="Jump to adopt now page">Adopt Now!</a>
       </div>
     </nav>
     <div class="banner">
@@ -30,11 +37,11 @@
         <h2>Every puppy deserves a forever home.</h2>
       </div>
       <div class="desktop-buttons">
-        <div class="tablet-left">
-          <button onclick='window.location.href="meet-the-pups.html"' class="primary-button" type="button" aria-label="Go to Meet the Pups page">See the Pups!</button>
+        <div class="tablet-left button">
+          <a href="meet-the-pups.html" class="primary-button" aria-label="Go to Meet the Pups page">See the Pups!</a>
         </div>
-        <div class="tablet-left">
-          <button onclick='window.location.href="#about"' class="secondary-button" type="button" aria-label="Scroll to about section">Learn More</button>
+        <div class="tablet-left button">
+          <a href="#about" class="secondary-button" aria-label="Scroll to about section">Learn More</a>
         </div>
       </div>
     </div>
@@ -48,7 +55,7 @@
       </div>
       <img src="images/about.jpg" alt="Cute puppy looking up at the camera">
       <div class="button-left">
-        <button onclick='window.location.href="https://dogtime.com/dog-breeds/dachshund#/slide/1"' class="primary-button" type="button" aria-label="Learn More about the Dachshund breed">More About Dachshunds</button>
+        <a href="https://dogtime.com/dog-breeds/dachshund#/slide/1" class="primary-button" aria-label="Learn More about the Dachshund breed">More About Dachshunds</a>
       </div>
     </section>
 
@@ -76,7 +83,7 @@
             <p>Brownie is an older boy here at the rescue, he was saved from a hole near a park where he got stuck trying to chase a rabbit. His owners were not located and was later taken in by Zann's Wiener Rescue. He is a fun loving boy, a little bratty, but great with people. He like to bark so his forever home would be better outside of the city. </p>
           </a>
         </li>
-        <li class="cards">
+        <li class="last">
           <a href="meet-the-pups.html" aria-label="hover revealing more text">
             <img src="images/brandy.jpg" alt="Longhaired wiener pup laying on her side">
             <h3>Brandy Age: 6mo.</h3>
@@ -85,17 +92,14 @@
         </li>
       </ul>
       <div class="button-center">
-        <button onclick='window.location.href="meet-the-pups.html#meet-the-pups"' class="primary-button" type="button" aria-label="See more of our pups">See More...</button>
+        <a href="meet-the-pups.html#meet-the-pups" class="primary-button" aria-label="See more of our pups">See More...</a>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="contact-info">
         <h2>Contact Us!</h2>
-        <p>Email: susanna@zannswienerrescue.com<br>
-          Phone: (613)-433-2678<br>
-          or<br>
-          Fill out this form for any questions regarding our little hot dogs!</p>
+        <p>Email: susanna@zannswienerrescue.com<br>Phone: (613)-433-2678<br>or<br>Fill out this form for any questions regarding our little hot dogs!</p>
       </div>
       <form method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
         <div class="name-info">
@@ -126,8 +130,8 @@
   </main>
 
   <footer role="contentinfo" class="footer">
-    <div class="button-center">
-      <button onclick='window.location.href="adopt-now.html"' class="footer-button" type="button" aria-label="Go to adobt now page">Adopt a Puppy Now!</button>
+    <div class="button-center footer-top-margin">
+      <a href="adopt-now.html" class="footer-button" aria-label="Go to adobt now page">Adopt a Puppy Now!</a>
     </div>
     <ul class="social-icons">
       <li><a href="https://www.facebook.com/" aria-label="Link to facebook website"><img src="images/fb-white.png" alt="White facebook icon"></a></li>
